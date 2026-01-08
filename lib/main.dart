@@ -11,14 +11,14 @@ class MonAppli extends StatelessWidget {
     return MaterialApp(
       title: "Magazine",
       debugShowCheckedModeBanner: false,
-      home: pageAccueil(),
+      home: PageAccueil(),
     );
   }
 }
 
 
-class pageAccueil extends StatelessWidget {
-  const pageAccueil({super.key});
+class PageAccueil extends StatelessWidget {
+  const PageAccueil({super.key});
 
   @override
   Widget build(BuildContext context) {
