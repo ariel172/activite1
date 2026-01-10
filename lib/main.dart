@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -66,4 +67,28 @@ class PageAccueil extends StatelessWidget {
     );
   }
 }
+
+class partieTitre extends StatelessWidget {
+  const partieTitre({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text("Titre du premier niveau",
+          style: TextStyle(
+            fontSize: 12,
+            fontWeight: FontWeight.bold,
+          ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
 
