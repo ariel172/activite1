@@ -45,7 +45,7 @@ class PageAccueil extends StatelessWidget {
         ),
       ),
     body: Center(
-        child: Image.asset('assets/images/imageMaison.png',
+        child: Image.asset('assets/images/magazineInfo.png',
           fit: BoxFit.cover
         ),
     ),
