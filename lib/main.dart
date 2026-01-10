@@ -91,4 +91,15 @@ class partieTitre extends StatelessWidget {
   }
 }
 
+class partieTexe extends StatelessWidget {
+  const partieTexe({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(20),
+      child: const Text("Titre du second niveau"),
+    );
+  }
+}
 
