@@ -12,7 +12,7 @@ class MonAppli extends StatelessWidget {
     return MaterialApp(
       title: "Magazine",
       debugShowCheckedModeBanner: false,
-      home: PageAccueil(),
+      home: partieIcone(),
     );
   }
 }
@@ -79,11 +79,14 @@ class partieTitre extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("Titre du premier niveau",
+          Text("Bienvenue au Magazine Infos",
           style: TextStyle(
             fontSize: 12,
             fontWeight: FontWeight.bold,
           ),
+          ),
+          Text("Votre magazine numérique, votre source d'inspiration",
+            style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
           )
         ],
       ),
@@ -97,9 +100,60 @@ class partieTexe extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(20),
-      child: const Text("Titre du second niveau"),
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: const Text("Magazine Infos est bien plus simple magazine d'information"),
     );
   }
 }
 
+class partieIcone extends StatelessWidget {
+  const partieIcone({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.only(bottom: 10),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Container(
+            padding: const EdgeInsets.all(20),
+            child: Column(
+              children: [
+                Icon(Icons.phone, color: Colors.pink),
+                SizedBox(height: 6,),
+                Text("Tel".toUpperCase(),
+                  style: TextStyle(color: Colors.pink),
+                )
+              ],
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.all(20),
+            child: Column(
+              children: [
+                Icon(Icons.email, color: Colors.pink),
+                SizedBox(height: 6,),
+                Text("mail".toUpperCase(),
+                  style: TextStyle(color: Colors.pink),
+                )
+              ],
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.all(20),
+            child: Column(
+              children: [
+                Icon(Icons.share, color: Colors.pink),
+                SizedBox(height: 6,),
+                Text("partage".toUpperCase(),
+                  style: TextStyle(color: Colors.pink),
+                )
+              ],
+            )
+          )
+        ],
+      ),
+    );
+  }
+}
