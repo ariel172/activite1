@@ -109,7 +109,9 @@ class PartieTexe extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: const Text(
           "Magazine Infos est bien plus simple magazine d'information."
-              "C'est votre passerelle vers le monde"
+              "C'est votre passerelle vers le monde, une source inestimable "
+              "de connaissance et d'actualités soignemesement sélectionner pour vous élairer sur les enjeux mondiaux, "
+              "la culture, la science et voir même le divertissement (le jeux)"
       ),
     );
   }
